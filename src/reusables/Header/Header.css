@@ -1,0 +1,40 @@
+header {
+    height: 90vh;
+    width: 100%;
+    position: relative;
+}
+
+header a {
+    color: #333;
+}
+
+.background-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/src/images/teacher-and-little-girl-banner.jpg);
+    background-position: center center;
+    background-size: cover;
+    transform: scaleX(-1);
+    z-index: -1;
+}
+
+.header-content {
+    margin-top: 100px;
+}
+
+.header-content h2 {
+    font-size: 3.4rem;
+}
+
+.header-content p {
+    font-size: 1.6rem;
+}
+
+header .cards-container {
+    bottom: -40%;
+    left: -50%;
+    right: -50%;
+}

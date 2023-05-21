@@ -1,0 +1,25 @@
+.home-play-video {
+    background-image: url("src/images/teacher-with-her-students.jpg");
+    background-position: center top;
+    background-size: cover;
+    height: 340px;
+    width: 540px;
+    border-radius: 24px 0 24px 0;
+    box-shadow: 34px 34px 0 #5617ae;
+}
+
+.home-play-video:hover {
+    opacity: 94%;
+}
+
+.home-play-video span {
+    font-size: 8.4rem;
+}
+
+.home-bullet-card span {
+    font-size: 3.4rem;
+}
+
+.home-bullet-card div {
+    line-height: 2.4rem;
+}

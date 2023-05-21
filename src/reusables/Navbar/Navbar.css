@@ -1,0 +1,30 @@
+header div ul {
+    font-weight: 500;
+}
+
+header div ul li {
+    position: relative;
+    cursor: pointer;
+}
+
+header div ul li:hover {
+    color: #5617ae;
+}
+
+header div ul li::after {
+    content: '';
+    display: block;
+    height: 8px;
+    width: 8px;
+    position: absolute;
+    border-top: 1px solid #333;
+    border-left: 1px solid #333;
+    right: 8px;
+    top: 4px;
+    transform: rotate(-135deg);
+}
+
+header div ul li:hover::after {
+    border-top-color: #5617ae;
+    border-left-color: #5617ae;
+}
