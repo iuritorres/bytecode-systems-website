@@ -2,11 +2,6 @@
     transition: all 300ms ease;
 }
 
-html, body {
-    min-width: 100vw;
-    /* overflow-x: hidden; */
-}
-
 html {
     /* a cada 1rem = 10px */
     font-size: 62.5%;
@@ -21,6 +16,8 @@ body {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    background-color: #D629D9;
 }
 
 a:hover {
