@@ -1,17 +1,17 @@
-header div ul {
+.main-nav-bar div ul {
     font-weight: 500;
 }
 
-header div ul li {
+.main-nav-bar div ul li {
     position: relative;
     cursor: pointer;
 }
 
-header div ul li:hover {
+.main-nav-bar div ul li:hover {
     color: #5617ae;
 }
 
-header div ul li::after {
+.main-nav-bar div ul li::after {
     content: '';
     display: block;
     height: 8px;
@@ -24,7 +24,56 @@ header div ul li::after {
     transform: rotate(-135deg);
 }
 
-header div ul li:hover::after {
+.main-nav-bar div ul li:hover::after {
     border-top-color: #5617ae;
     border-left-color: #5617ae;
+}
+
+/* media queries */
+@media screen and (max-width: 1000px) {
+    .main-nav-bar {
+        padding: 15px 0;
+    }
+
+    .main-nav-bar div {
+        flex-direction: column;        
+        max-width: none;
+    }
+
+    .main-nav-bar div a img {
+        height: 40px;
+    }
+
+    .main-nav-bar div ul {
+        width: 80% !important;
+        justify-content: space-between;
+        margin-top: 2rem !important;
+        border-top: 2px solid #333;
+    }
+
+    .main-nav-bar div ul li {
+        padding: 0 !important;
+    }
+
+    .main-nav-bar div ul li::after {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .main-nav-bar div ul {
+        gap: 12px !important;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .main-nav-bar div ul {
+        flex-wrap: wrap;
+        padding-top: 8px;
+    }
+
+    .main-nav-bar div ul li {
+        text-align: center;
+        width: 40%;
+    }
 }

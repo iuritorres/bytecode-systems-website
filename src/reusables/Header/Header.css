@@ -1,5 +1,5 @@
 header {
-    height: 90vh;
+    height: 600px;
     width: 100%;
     position: relative;
 }
@@ -34,7 +34,77 @@ header a {
 }
 
 header .cards-container {
-    bottom: -40%;
+    bottom: -280px;
     left: -50%;
     right: -50%;
+}
+
+.after-header-section {
+    padding-top: 380px;
+    padding-bottom: 140px;
+}
+
+.after-header-section span {
+    color: #5617ae;
+}
+
+/* media queries */
+@media screen and (max-width: 1200px) {
+    .cards-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        bottom: -500px !important;
+    }
+
+    .cards-container .primary-card {
+        width: 45% !important;
+    }
+
+    .after-header-section {
+        padding-top: 600px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .cards-container {
+        bottom: -940px !important;
+    }
+
+    .cards-container .primary-card {    
+        width: 80% !important;
+    }
+
+    .after-header-section {
+        padding-top: 1000px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .cards-container {
+        bottom: -980px !important;
+    }
+
+    .cards-container .primary-card {
+        width: 100% !important;
+    }
+
+    .after-header-section {
+        padding-top: 1040px;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .header-content {
+        margin-top: 30px;
+    }
+
+    .cards-container {
+        bottom: -1000px !important;
+    }
+}
+
+@media screen and (max-width: 415px) {    
+    .cards-container {
+        bottom: -1100px !important;
+    }
 }

@@ -3,12 +3,12 @@ import "./Header.css"
 
 const Header = () => {
     return (
-        <header>
+        <header className="w-100">
             {/* Nav bar */}
             <Navbar />
 
             {/* Header Content */}
-            <div className="header-content text-white w-75 mx-auto pt-5 d-flex flex-column gap-4">
+            <div className="header-content text-white w-75 mx-auto d-flex flex-column gap-4">
                 <h2>Simplifique sua gestão<br/>educacional com<br/>nossas solucões</h2>
                 <p>
                     Sistemas de gestão educacional integrados de
@@ -23,7 +23,7 @@ const Header = () => {
             <div className="background-banner"></div>
 
             {/* Cards */}
-            <div className="cards-container container d-flex gap-5 position-absolute">
+            <div className="cards-container container position-absolute d-flex gap-5">
                 <div className="primary-card w-25">
                     <span class="material-symbols-rounded">forum</span>
                     <h3>Comunicação Eficiente</h3>

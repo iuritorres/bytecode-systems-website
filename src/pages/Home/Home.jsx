@@ -6,9 +6,9 @@ const Home = () => {
         <>
             <Header/>
 
-            <section className="after-header-section bg-white">
-                <div className="container d-flex justify-content-between align-items-center">
-                    <div>
+            <section className="after-header-section bg-white w-100">
+                <div className="home-gestao-simplificada container d-flex justify-content-between align-items-center justify-content-lg-center">
+                    <div className="home-video-columns">
                         <span>Nosso Software</span>
                         <h1>Gestão Simplificada</h1>
 
@@ -18,12 +18,12 @@ const Home = () => {
                             notas, frequência, calendários acadêmicos e muito mais em uma única plataforma fácil de usar.
                         </p>
 
-                        <div className="d-flex align-items-center justify-content-between pe-5 me-5">
+                        <div className="home-bullet-parent d-flex align-items-center gap-5">
                             <div className="home-bullet-card d-flex gap-4 mt-5">
-                                <span class="material-symbols-rounded">groups</span>
+                                <span class="material-symbols-rounded">school</span>
                                 <div>
                                     <span className="fw-bold">20+</span>
-                                    <p className="text-muted">Clientes ativos</p>
+                                    <p className="text-muted">Clientes</p>
                                 </div>
                             </div>
 
@@ -37,7 +37,7 @@ const Home = () => {
                         </div>
                     </div>
 
-                    <div>
+                    <div className="home-video-columns">
                         <a href="#" className="home-play-video d-flex justify-content-center align-items-center text-decoration-none">
                             <span class="material-symbols-rounded">play_circle</span>
                         </a>
