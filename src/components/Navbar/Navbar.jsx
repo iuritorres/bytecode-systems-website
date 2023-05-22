@@ -7,7 +7,7 @@ import "./Navbar.css"
 const Navbar = () => {
 
     // HANDLE OPEN & CLOSE POPOVERS
-    const [activePopover, setActivePopover] = useState(null);
+    const [activePopover, setActivePopover] = useState(null)
 
     const handlePopoverOpen = (popoverId) => {
         if (activePopover === popoverId) {
