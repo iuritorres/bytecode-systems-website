@@ -25,7 +25,7 @@ const Header = () => {
             {/* Cards */}
             <div className="cards-container container position-absolute d-flex gap-5">
                 <div className="primary-card w-25">
-                    <span class="material-symbols-rounded">forum</span>
+                    <span className="material-symbols-rounded">forum</span>
                     <h3>Comunicação Eficiente</h3>
                     <p className="text-muted fs-4">
                         Nosso software de gestão educacional oferece recursos avançados de comunicação que
@@ -34,7 +34,7 @@ const Header = () => {
                 </div>
 
                 <div className="primary-card w-25">
-                    <span class="material-symbols-rounded">account_tree</span>
+                    <span className="material-symbols-rounded">account_tree</span>
                     <h3>Integração Simplificada</h3>
                     <p className="text-muted fs-4">
                         Nosso software de gestão educacional permite a integração simplificada com outros sistemas utilizados pela sua instituição.
@@ -42,7 +42,7 @@ const Header = () => {
                 </div>
 
                 <div className="primary-card w-25">
-                    <span class="material-symbols-rounded">rebase</span>
+                    <span className="material-symbols-rounded">rebase</span>
                     <h3>Automação de Processos</h3>
                     <p className="text-muted fs-4">
                         Reduza a carga de trabalho administrativo e aumente a eficiência com a automação de processos
@@ -50,7 +50,7 @@ const Header = () => {
                 </div>
 
                 <div className="primary-card w-25">
-                    <span class="material-symbols-rounded">support_agent</span>
+                    <span className="material-symbols-rounded">support_agent</span>
                     <h3>Suporte Ativo</h3>
                     <p className="text-muted fs-4">
                         Oferecemos suporte técnico dedicado, com uma equipe

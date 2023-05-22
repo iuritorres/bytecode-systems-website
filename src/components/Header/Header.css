@@ -41,7 +41,7 @@ header .cards-container {
 
 .after-header-section {
     padding-top: 380px;
-    padding-bottom: 140px;
+    padding-bottom: 80px;
 }
 
 .after-header-section span {
@@ -106,5 +106,9 @@ header .cards-container {
 @media screen and (max-width: 415px) {    
     .cards-container {
         bottom: -1100px !important;
+    }
+
+    header {
+        height: 650px;
     }
 }
