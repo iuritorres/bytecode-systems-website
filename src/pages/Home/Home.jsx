@@ -1,4 +1,4 @@
-import Header from "../../reusables/Header/Header"
+import Header from "../../components/Header/Header"
 import './Home.css'
 
 const Home = () => {
@@ -20,7 +20,7 @@ const Home = () => {
 
                         <div className="home-bullet-parent d-flex align-items-center gap-5">
                             <div className="home-bullet-card d-flex gap-4 mt-5">
-                                <span class="material-symbols-rounded">school</span>
+                                <span className="material-symbols-rounded">school</span>
                                 <div>
                                     <span className="fw-bold">20+</span>
                                     <p className="text-muted">Clientes</p>
@@ -28,7 +28,7 @@ const Home = () => {
                             </div>
 
                             <div className="home-bullet-card d-flex gap-4 mt-5">
-                                <span class="material-symbols-rounded">groups</span>
+                                <span className="material-symbols-rounded">groups</span>
                                 <div>
                                     <span className="fw-bold">12+</span>
                                     <p className="text-muted">Desenvolvedores</p>
@@ -39,7 +39,7 @@ const Home = () => {
 
                     <div className="home-video-columns">
                         <a href="#" className="home-play-video d-flex justify-content-center align-items-center text-decoration-none">
-                            <span class="material-symbols-rounded">play_circle</span>
+                            <span className="material-symbols-rounded">play_circle</span>
                         </a>
                     </div>
                 </div>

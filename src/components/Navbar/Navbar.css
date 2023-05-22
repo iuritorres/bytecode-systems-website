@@ -5,6 +5,7 @@
 .main-nav-bar div ul li {
     position: relative;
     cursor: pointer;
+    user-select: none;
 }
 
 .main-nav-bar div ul li:hover {
@@ -29,6 +30,32 @@
     border-left-color: #5617ae;
 }
 
+#popover-basic {
+    background-color: aliceblue;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navbar-popover-link {
+    font-weight: 500;
+}
+
+.navbar-popover-link span {
+    color: #5617ae;
+    font-size: 3rem;
+}
+
+.navbar-popover-link:hover {
+    color: #5617ae !important;
+}
+
+.popover-line {
+    color: #5617ae;
+    margin: 2.4rem auto;
+    opacity: 1;
+}
+
 /* media queries */
 @media screen and (max-width: 1000px) {
     .main-nav-bar {
@@ -48,6 +75,7 @@
         width: 80% !important;
         justify-content: space-between;
         margin-top: 2rem !important;
+        padding-top: 2rem;
         border-top: 2px solid #333;
     }
 
