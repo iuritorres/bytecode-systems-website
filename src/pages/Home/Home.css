@@ -34,14 +34,23 @@
     }
 
     .home-video-columns {
-        margin: auto;
-        width: 100%;
+        text-align: center;
+        width: 98%;
+    }
+
+    .home-bullet-card {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .home-bullet-card span {
+        margin-bottom: -1rem;
     }
     
     .home-play-video {
-        margin-top: 20px;
+        margin: 20px;
         height: 280px;
-        width: 100%;
+        width: 90%;
     }
 }
 
@@ -51,6 +60,7 @@
     }
 
     .home-play-video {
+        margin-left: 0.8rem;
         height: 200px;
         width: 90%;
     }
