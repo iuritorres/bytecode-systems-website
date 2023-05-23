@@ -23,101 +23,95 @@ const Navbar = () => {
     }
 
     // PRODUCTS POPOVER
+    const productItems = [
+        {name: 'Frequência', icon: 'calendar_month'},
+        {name: 'Lançamento de Notas', icon: 'checklist'},
+        {name: 'Moods (Feedbacks)', icon: 'thumbs_up_down'},
+        {name: 'Suporte ao Aluno', icon: 'forum'},
+        {name: 'Comunicados', icon: 'mail'},
+        {name: 'Biblioteca Online', icon: 'menu_book'},
+        {name: 'Diagnósticos', icon: 'analytics'},
+        {name: 'Blog Educacional', icon: 'newspaper'}
+    ]
+
     const productsPopover = (
         <Popover id="popover-basic">
             <Popover.Body className="p-5">
                 <h3 className="fw-bold text-muted">Nossos produtos</h3>
                 <hr className="popover-line" />
 
-                <a className="navbar-popover-link text-decoration-none d-flex align-items-center gap-3 fs-4 mb-4 text-muted" href="#">
-                    <span className="material-symbols-rounded">calendar_month</span>
-                    Frequência
-                </a>
-                <a className="navbar-popover-link text-decoration-none d-flex align-items-center gap-3 fs-4 mb-4 text-muted" href="#">
-                    <span className="material-symbols-rounded">checklist</span>
-                    Lançamento de Notas
-                </a>
-                <a className="navbar-popover-link text-decoration-none d-flex align-items-center gap-3 fs-4 mb-4 text-muted" href="#">
-                    <span className="material-symbols-rounded">thumbs_up_down</span>
-                    Moods (Feedbacks)
-                </a>
-                <a className="navbar-popover-link text-decoration-none d-flex align-items-center gap-3 fs-4 mb-4 text-muted" href="#">
-                    <span className="material-symbols-rounded">forum</span>
-                    Suporte ao Aluno
-                </a>
-                <a className="navbar-popover-link text-decoration-none d-flex align-items-center gap-3 fs-4 mb-4 text-muted" href="#">
-                    <span className="material-symbols-rounded">mail</span>
-                    Comunicados
-                </a>
-                <a className="navbar-popover-link text-decoration-none d-flex align-items-center gap-3 fs-4 mb-4 text-muted" href="#">
-                    <span className="material-symbols-rounded">menu_book</span>
-                    Biblioteca Online
-                </a>
-                <a className="navbar-popover-link text-decoration-none d-flex align-items-center gap-3 fs-4 mb-4 text-muted" href="#">
-                    <span className="material-symbols-rounded">analytics</span>
-                    Diagnósticos
-                </a>
-                <a className="navbar-popover-link text-decoration-none d-flex align-items-center gap-3 fs-4 text-muted" href="#">
-                    <span className="material-symbols-rounded">newspaper</span>
-                    Blog Educacional
-                </a>
+                {productItems.map(item => (
+                    <a key={`div-${item.name}-${item.icon}`} className="navbar-popover-link text-decoration-none d-flex align-items-center gap-3 fs-4 mb-4 text-muted" href="#">
+                        <span className="material-symbols-rounded">{item.icon}</span>
+                        {item.name}
+                    </a>
+                ))}
             </Popover.Body>
         </Popover>
     )
 
     // CUSTOMER POPOVER
+    const customersItems = [
+        {name: 'Frequência', icon: 'calendar_month'},
+        {name: 'Lançamento de Notas', icon: 'checklist'}
+    ]
+
     const customersPopover = (
         <Popover id="popover-basic">
             <Popover.Body className="p-5">
                 <h3 className="fw-bold text-muted">Nossos clientes</h3>
                 <hr className="popover-line" />
 
-                <a className="navbar-popover-link text-decoration-none d-flex align-items-center gap-3 fs-4 mb-4 text-muted" href="#">
-                    <span className="material-symbols-rounded">calendar_month</span>
-                    Frequência
-                </a>
-                <a className="navbar-popover-link text-decoration-none d-flex align-items-center gap-3 fs-4 mb-4 text-muted" href="#">
-                    <span className="material-symbols-rounded">checklist</span>
-                    Lançamento de Notas
-                </a>
+                {customersItems.map(item => (
+                    <a key={`div-${item.name}-${item.icon}`} className="navbar-popover-link text-decoration-none d-flex align-items-center gap-3 fs-4 mb-4 text-muted" href="#">
+                        <span className="material-symbols-rounded">{item.icon}</span>
+                        {item.name}
+                    </a>
+                ))}
             </Popover.Body>
         </Popover>
     )
 
     // CONTENTS POPOVER
+    const contentsItems = [
+        {name: 'Frequência', icon: 'calendar_month'},
+        {name: 'Lançamento de Notas', icon: 'checklist'}
+    ]
+
     const contentsPopover = (
         <Popover id="popover-basic">
             <Popover.Body className="p-5">
                 <h3 className="fw-bold text-muted">Conteúdos</h3>
                 <hr className="popover-line" />
 
-                <a className="navbar-popover-link text-decoration-none d-flex align-items-center gap-3 fs-4 mb-4 text-muted" href="#">
-                    <span className="material-symbols-rounded">calendar_month</span>
-                    Frequência
-                </a>
-                <a className="navbar-popover-link text-decoration-none d-flex align-items-center gap-3 fs-4 mb-4 text-muted" href="#">
-                    <span className="material-symbols-rounded">checklist</span>
-                    Lançamento de Notas
-                </a>
+                {contentsItems.map(item => (
+                    <a key={`div-${item.name}-${item.icon}`} className="navbar-popover-link text-decoration-none d-flex align-items-center gap-3 fs-4 mb-4 text-muted" href="#">
+                        <span className="material-symbols-rounded">{item.icon}</span>
+                        {item.name}
+                    </a>
+                ))}
             </Popover.Body>
         </Popover>
     )
 
     // ABOUT US POPOVER
+    const aboutUsItems = [
+        {name: 'Frequência', icon: 'calendar_month'},
+        {name: 'Lançamento de Notas', icon: 'checklist'}
+    ]
+
     const aboutUsPopover = (
         <Popover id="popover-basic">
             <Popover.Body className="p-5">
                 <h3 className="fw-bold text-muted">Sobre nós</h3>
                 <hr className="popover-line" />
 
-                <a className="navbar-popover-link text-decoration-none d-flex align-items-center gap-3 fs-4 mb-4 text-muted" href="#">
-                    <span className="material-symbols-rounded">calendar_month</span>
-                    Frequência
-                </a>
-                <a className="navbar-popover-link text-decoration-none d-flex align-items-center gap-3 fs-4 mb-4 text-muted" href="#">
-                    <span className="material-symbols-rounded">checklist</span>
-                    Lançamento de Notas
-                </a>
+                {aboutUsItems.map(item => (
+                    <a key={`div-${item.name}-${item.icon}`} className="navbar-popover-link text-decoration-none d-flex align-items-center gap-3 fs-4 mb-4 text-muted" href="#">
+                        <span className="material-symbols-rounded">{item.icon}</span>
+                        {item.name}
+                    </a>
+                ))}
             </Popover.Body>
         </Popover>
     )
