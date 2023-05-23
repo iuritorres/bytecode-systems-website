@@ -1,4 +1,6 @@
+import { Container } from "react-bootstrap"
 import Header from "../../components/Header/Header"
+import HorizontalCard from "../../components/HorizontalCard/HorizontalCard"
 import './Home.css'
 
 const Home = () => {
@@ -6,9 +8,10 @@ const Home = () => {
         <>
         <Header/>
 
-        <section className="after-header-section bg-white w-100">
+        {/* SIMPLIFIED GESTATION */}
+        <section className="after-header-section w-100">
             <div className="home-gestao-simplificada container d-flex justify-content-between align-items-center justify-content-lg-center">
-                <div className="home-video-columns">
+                <div className="home-video-columns col-md-6">
                     <span>Nosso Software</span>
                     <h1>Gestão Simplificada</h1>
 
@@ -37,12 +40,86 @@ const Home = () => {
                     </div>
                 </div>
 
-                <div className="home-video-columns">
+                <div className="home-video-columns col-md-6">
                     <a href="#" className="home-play-video d-flex justify-content-center align-items-center text-decoration-none">
                         <span className="material-symbols-rounded">play_circle</span>
                     </a>
                 </div>
             </div>
+        </section>
+
+        {/* OUR PRODUCTS */}
+        <section className="bg-white w-100 py-5">
+            <Container className="home-service-container row mx-auto py-5">
+                <div className="col-4">
+                    <span>Nossos Produtos</span>
+                    <h1>Conheça Nossos Produtos</h1>
+
+                    <p className="text-muted pb-5 pe-5 my-5">
+                        Nossos produtos visam aumentar a produtividade e promover eficiência na gestão educacional,
+                        resultando em melhores desempenhos e resultados positivos para a sua instituição de ensino.
+                    </p>
+
+                    <a className="primary-button" href="#" target="_blank">Ver todos</a>
+                </div>
+
+                <div className="col-8">
+                    <div className="home-card-div-parent row">
+                        <div className="col-6">
+                            <HorizontalCard
+                                icon="calendar_month"
+                                title="Frequência"
+                                content={
+                                    <p>Solução abrangente para<br/>
+                                    acompanhar, monitorar e otimizar a frequência
+                                    dos alunos nas instituições de ensino.</p>
+                                }
+                            />
+                        </div>
+                        <div className="col-6">
+                            <HorizontalCard
+                                icon="checklist"
+                                title="Lançamento de Notas"
+                                content={
+                                    <p>Nossa solução simplifica o<br/>
+                                    trabalho dos professores e fornece um feedback claro aos alunos sobre seu desempenho acadêmico.</p>
+                                }
+                            />
+                        </div>
+                    </div>
+
+                    <div className="home-card-div-parent row">
+                        <div className="col-6">
+                            <HorizontalCard
+                                icon="calendar_month"
+                                title="Frequência"
+                                content={
+                                    <p>Solução abrangente para<br/>
+                                    acompanhar, monitorar e otimizar a frequência
+                                    dos alunos nas instituições de ensino.</p>
+                                }
+                            />
+                        </div>
+                        <div className="col-6">
+                            <HorizontalCard
+                                icon="checklist"
+                                title="Lançamento de Notas"
+                                content={
+                                    <p>Nossa solução simplifica o<br/>
+                                    trabalho dos professores e fornece um feedback claro aos alunos sobre seu desempenho acadêmico.</p>
+                                }
+                            />
+                        </div>
+                    </div>
+                </div>
+            </Container>
+        </section>
+
+        {/* SERVICES */}
+        <section className="w-100 py-5">
+            <Container className="mx-auto py-5">
+
+            </Container>
         </section>
         </>
     )

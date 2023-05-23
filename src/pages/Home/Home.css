@@ -1,7 +1,3 @@
-.home-video-columns {
-    width: 45%;
-}
-
 .home-play-video {
     background-image: url("../../images/teacher-with-her-students.jpg");
     background-position: center top;
@@ -27,7 +23,38 @@
     line-height: 2.4rem;
 }
 
+/* OUR PRODUCTS */
+.home-card-div-parent {
+    margin-bottom: 1rem !important;
+}
+
 /* media queries */
+@media screen and (max-width: 1000px) {
+    .home-service-container {
+        flex-direction: column;
+    }
+
+    .home-service-container div {
+        width: 100%;
+    }
+
+    .home-service-container div p {
+        padding-bottom: 4px !important;
+    }
+
+    .home-card-div-parent:first-of-type {
+        margin-top: 4rem !important;
+    }
+
+    .home-card-div-parent {
+        margin-bottom: 0 !important;
+    }
+
+    .home-card-div-parent div {
+        margin-bottom: 1rem;
+    }
+}
+
 @media screen and (max-width: 770px) {
     .home-gestao-simplificada {
         flex-direction: column;

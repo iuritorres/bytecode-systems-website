@@ -15,7 +15,7 @@ const Header = () => {
                     maneira ágil e<br/>segura. Tudo em uma única plataforma.
                 </p>
 
-                <a href="#" target="_blank" className="primary-button text-decoration-none text-white">
+                <a href="#" target="_blank" className="primary-button">
                     Conhecer nossas solucões
                 </a>
             </div>

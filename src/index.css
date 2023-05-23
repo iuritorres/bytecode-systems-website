@@ -1,5 +1,6 @@
 * {
     transition: all 200ms ease;
+    text-decoration: none !important;
 }
 
 html {
@@ -16,6 +17,10 @@ body {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+section span {
+    color: #5617ae;
 }
 
 a:hover {
@@ -41,6 +46,7 @@ a:hover {
 
 .primary-button {
     background-color: #610BD9;
+    color: aliceblue !important;
     padding: 16px 24px;
     border-radius: 4px;
     width: fit-content;
