@@ -19,6 +19,25 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+/* scroll bar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: aliceblue;    
+}
+
+::-webkit-scrollbar-thumb {
+    background: #610BD9;
+    border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #5617ae;
+}
+
+/* elements */
 section span {
     color: #5617ae;
 }

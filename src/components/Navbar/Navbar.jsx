@@ -41,7 +41,12 @@ const Navbar = () => {
                 <hr className="popover-line" />
 
                 {productItems.map(item => (
-                    <a key={`div-${item.name}-${item.icon}`} className="navbar-popover-link text-decoration-none d-flex align-items-center gap-3 fs-4 mb-4 text-muted" href="#">
+                    <a
+                        key={`div-${item.name}-${item.icon}`}
+                        className="navbar-popover-link text-decoration-none d-flex align-items-center gap-3 fs-4 mb-4 text-muted"
+                        target='_blank'
+                        href="#"
+                    >
                         <span className="material-symbols-rounded">{item.icon}</span>
                         {item.name}
                     </a>
@@ -63,7 +68,12 @@ const Navbar = () => {
                 <hr className="popover-line" />
 
                 {customersItems.map(item => (
-                    <a key={`div-${item.name}-${item.icon}`} className="navbar-popover-link text-decoration-none d-flex align-items-center gap-3 fs-4 mb-4 text-muted" href="#">
+                    <a
+                        key={`div-${item.name}-${item.icon}`}
+                        className="navbar-popover-link text-decoration-none d-flex align-items-center gap-3 fs-4 mb-4 text-muted"
+                        target='_blank'
+                        href="#"
+                    >
                         <span className="material-symbols-rounded">{item.icon}</span>
                         {item.name}
                     </a>
@@ -85,7 +95,12 @@ const Navbar = () => {
                 <hr className="popover-line" />
 
                 {contentsItems.map(item => (
-                    <a key={`div-${item.name}-${item.icon}`} className="navbar-popover-link text-decoration-none d-flex align-items-center gap-3 fs-4 mb-4 text-muted" href="#">
+                    <a
+                        key={`div-${item.name}-${item.icon}`}
+                        className="navbar-popover-link text-decoration-none d-flex align-items-center gap-3 fs-4 mb-4 text-muted"
+                        target='_blank'
+                        href="#"
+                    >
                         <span className="material-symbols-rounded">{item.icon}</span>
                         {item.name}
                     </a>
@@ -107,7 +122,12 @@ const Navbar = () => {
                 <hr className="popover-line" />
 
                 {aboutUsItems.map(item => (
-                    <a key={`div-${item.name}-${item.icon}`} className="navbar-popover-link text-decoration-none d-flex align-items-center gap-3 fs-4 mb-4 text-muted" href="#">
+                    <a
+                        key={`div-${item.name}-${item.icon}`}
+                        className="navbar-popover-link text-decoration-none d-flex align-items-center gap-3 fs-4 mb-4 text-muted"
+                        target='_blank'
+                        href="#"
+                    >
                         <span className="material-symbols-rounded">{item.icon}</span>
                         {item.name}
                     </a>
