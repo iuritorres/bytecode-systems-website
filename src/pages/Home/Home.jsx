@@ -70,8 +70,8 @@ const Home = () => {
                                 icon="calendar_month"
                                 title="Frequência"
                                 content={
-                                    <p>Solução abrangente para<br/>
-                                    acompanhar, monitorar e otimizar a frequência
+                                    <p>Solução abrangente para acompanhar,
+                                    monitorar e otimizar a frequência
                                     dos alunos nas instituições de ensino.</p>
                                 }
                             />
@@ -81,8 +81,10 @@ const Home = () => {
                                 icon="checklist"
                                 title="Lançamento de Notas"
                                 content={
-                                    <p>Nossa solução simplifica o<br/>
-                                    trabalho dos professores e fornece um feedback claro aos alunos sobre seu desempenho acadêmico.</p>
+                                    <p>Nossa solução simplifica o
+                                    trabalho dos professores e fornece
+                                    um feedback claro aos alunos sobre
+                                    seu desempenho acadêmico.</p>
                                 }
                             />
                         </div>
@@ -91,22 +93,26 @@ const Home = () => {
                     <div className="home-card-div-parent row">
                         <div className="col-6">
                             <HorizontalCard
-                                icon="calendar_month"
-                                title="Frequência"
+                                icon="menu_book"
+                                title="Biblioteca Online"
                                 content={
-                                    <p>Solução abrangente para<br/>
-                                    acompanhar, monitorar e otimizar a frequência
-                                    dos alunos nas instituições de ensino.</p>
+                                    <p>Biblioteca online para estudantes:
+                                    acesso fácil a recursos educacionais,
+                                    promovendo aprendizado autônomo e acesso
+                                    conveniente a conteúdos relevantes.</p>
                                 }
                             />
                         </div>
                         <div className="col-6">
                             <HorizontalCard
-                                icon="checklist"
-                                title="Lançamento de Notas"
+                                icon="thumbs_up_down"
+                                title="Moods (Feedbacks)"
                                 content={
-                                    <p>Nossa solução simplifica o<br/>
-                                    trabalho dos professores e fornece um feedback claro aos alunos sobre seu desempenho acadêmico.</p>
+                                    <p>Sistema de feedback interativo:
+                                    fortaleça a comunicação entre alunos
+                                    e professores, promovendo um ambiente
+                                    colaborativo e melhorando a
+                                    qualidade da aprendizagem.</p>
                                 }
                             />
                         </div>
@@ -116,11 +122,11 @@ const Home = () => {
         </section>
 
         {/* SERVICES */}
-        <section className="w-100 py-5">
+        {/* <section className="w-100 py-5">
             <Container className="mx-auto py-5">
 
             </Container>
-        </section>
+        </section> */}
         </>
     )
 }
