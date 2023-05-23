@@ -44,10 +44,6 @@ header .cards-container {
     padding-bottom: 80px;
 }
 
-.after-header-section span {
-    color: #5617ae;
-}
-
 /* media queries */
 @media screen and (max-width: 1200px) {
     .cards-container {
