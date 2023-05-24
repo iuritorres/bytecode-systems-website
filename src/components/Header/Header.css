@@ -63,11 +63,11 @@ header .cards-container {
 
 @media screen and (max-width: 1000px) {
     .cards-container {
-        bottom: -940px !important;
+        bottom: -920px !important;
     }
 
     .cards-container .primary-card {    
-        width: 80% !important;
+        width: 100% !important;
     }
 
     .after-header-section {

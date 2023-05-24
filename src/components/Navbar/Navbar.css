@@ -5,7 +5,6 @@
 .main-nav-bar div ul li {
     position: relative;
     cursor: pointer;
-    user-select: none;
 }
 
 .main-nav-bar div ul li:hover {
