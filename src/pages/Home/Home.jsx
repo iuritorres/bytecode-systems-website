@@ -69,23 +69,19 @@ const Home = () => {
                             <HorizontalCard
                                 icon="calendar_month"
                                 title="Frequência"
-                                content={
-                                    <p>Solução abrangente para acompanhar,
+                                content="Solução abrangente para acompanhar,
                                     monitorar e otimizar a frequência
-                                    dos alunos nas instituições de ensino.</p>
-                                }
+                                    dos alunos nas instituições de ensino."
                             />
                         </div>
                         <div className="col-6">
                             <HorizontalCard
                                 icon="checklist"
                                 title="Lançamento de Notas"
-                                content={
-                                    <p>Nossa solução simplifica o
+                                content="Nossa solução simplifica o
                                     trabalho dos professores e fornece
                                     um feedback claro aos alunos sobre
-                                    seu desempenho acadêmico.</p>
-                                }
+                                    seu desempenho acadêmico."
                             />
                         </div>
                     </div>
@@ -95,25 +91,21 @@ const Home = () => {
                             <HorizontalCard
                                 icon="menu_book"
                                 title="Biblioteca Online"
-                                content={
-                                    <p>Biblioteca online para estudantes:
+                                content="Biblioteca online para estudantes:
                                     acesso fácil a recursos educacionais,
                                     promovendo aprendizado autônomo e acesso
-                                    conveniente a conteúdos relevantes.</p>
-                                }
+                                    conveniente a conteúdos relevantes."
                             />
                         </div>
                         <div className="col-6">
                             <HorizontalCard
                                 icon="thumbs_up_down"
                                 title="Moods (Feedbacks)"
-                                content={
-                                    <p>Sistema de feedback interativo:
+                                content="Sistema de feedback interativo:
                                     fortaleça a comunicação entre alunos
                                     e professores, promovendo um ambiente
                                     colaborativo e melhorando a
-                                    qualidade da aprendizagem.</p>
-                                }
+                                    qualidade da aprendizagem."
                             />
                         </div>
                     </div>
@@ -121,12 +113,22 @@ const Home = () => {
             </Container>
         </section>
 
-        {/* SERVICES */}
-        {/* <section className="w-100 py-5">
+        {/* BENEFITS */}
+        <section className="w-100 py-5">
             <Container className="mx-auto py-5">
+                <div className="row">
+                    <div className="col-6">
 
+                    </div>
+
+                    <div className="home-video-columns col-6">
+                    <a href="#" className="home-play-video d-flex justify-content-center align-items-center text-decoration-none">
+                        <span className="material-symbols-rounded">play_circle</span>
+                    </a>
+                </div>
+                </div>
             </Container>
-        </section> */}
+        </section>
         </>
     )
 }
