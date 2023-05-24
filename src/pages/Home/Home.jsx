@@ -2,11 +2,12 @@ import { Container } from "react-bootstrap"
 import Header from "../../components/Header/Header"
 import HorizontalCard from "../../components/HorizontalCard/HorizontalCard"
 import './Home.css'
+import Footer from "../../components/Footer/Footer"
 
 const Home = () => {
     return (
         <>
-        <Header/>
+        <Header />
 
         {/* SIMPLIFIED MANAGEMENT */}
         <section className="after-header-section w-100">
@@ -49,7 +50,7 @@ const Home = () => {
         </section>
 
         {/* OUR PRODUCTS */}
-        <section className="bg-white w-100 py-3">
+        <section className="bg-white w-100 py-5">
             <Container className="home-service-container row mx-auto py-5">
                 <div className="col-4">
                     <span>Nossos Produtos</span>
@@ -114,7 +115,7 @@ const Home = () => {
         </section>
 
         {/* BENEFITS */}
-        <section className="w-100 py-3">
+        <section className="w-100 py-5 mb-5">
             <Container className="py-5">
                 <div className="row home-benefits-row">
                     <div className="home-video-columns col-6">
@@ -131,61 +132,31 @@ const Home = () => {
                         </p>
 
                         {/* PROGRESS BARS */}
-                        <div className="mb-4">
-                            <div className="d-flex justify-content-between">
-                                <span className="text-muted">Aumento de Produtividade</span>
-                                <span className="text-muted">40%</span>
+                        {[
+                            {title: 'Aumento de Produtividade', value: 40},
+                            {title: 'Redução de Retrabalhos',   value: 70},
+                            {title: 'Melhoria na Comunicação',  value: 50},
+                            {title: 'Otimização do Tempo',      value: 30},
+                        ].map(item => (
+                            <div key={`home-benefits-${item.title}-${item.value}`} className="mb-4">
+                                <div className="d-flex justify-content-between">
+                                    <span className="text-muted">{item.title}</span>
+                                    <span className="text-muted">{item.value}%</span>
+                                </div>
+
+                                <progress
+                                    className="w-100"
+                                    value={item.value}
+                                    max={100}
+                                />
                             </div>
-
-                            <progress
-                                className="w-100"
-                                value={40}
-                                max={100}
-                            />
-                        </div>
-
-                        <div className="mb-4">
-                            <div className="d-flex justify-content-between">
-                                <span className="text-muted">Redução de Retrabalhos</span>
-                                <span className="text-muted">70%</span>
-                            </div>
-
-                            <progress
-                                className="w-100"
-                                value={70}
-                                max={100}
-                            />
-                        </div>
-
-                        <div className="mb-4">
-                            <div className="d-flex justify-content-between">
-                                <span className="text-muted">Melhoria na Comunicação</span>
-                                <span className="text-muted">50%</span>
-                            </div>
-
-                            <progress
-                                className="w-100"
-                                value={50}
-                                max={100}
-                            />
-                        </div>
-
-                        <div>
-                            <div className="d-flex justify-content-between">
-                                <span className="text-muted">Otimização do Tempo</span>
-                                <span className="text-muted">30%</span>
-                            </div>
-
-                            <progress
-                                className="w-100"
-                                value={30}
-                                max={100}
-                            />
-                        </div>
+                        ))}
                     </div>
                 </div>
             </Container>
         </section>
+
+        <Footer />
         </>
     )
 }

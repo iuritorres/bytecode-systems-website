@@ -5,13 +5,13 @@
 
 html {
     /* a cada 1rem = 10px */
-    font-size: 62.5%;
+    font-size: 62.5%;    
 }
 
 body {
     font-family: 'Ubuntu', sans-serif;
     font-size: 1.6rem;
-    min-height: 100vh;
+    min-height: 100vh;    
     
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -71,6 +71,10 @@ a:hover {
     opacity: 10px;
 }
 
+a.text-muted:hover {
+    color: #D629D9 !important;
+}
+
 .bg-white {
     background-color: aliceblue !important;
 }
@@ -81,6 +85,11 @@ a:hover {
 
 .logo {
     height: 50px;
+}
+
+.logo-footer {
+    height: 40px;
+    margin-left: -4px;
 }
 
 .purple-span {
