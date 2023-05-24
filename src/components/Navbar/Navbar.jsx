@@ -4,6 +4,9 @@ import Popover from 'react-bootstrap/Popover'
 
 import "./Navbar.css"
 
+// TODO: CREATE LOGIC TO IF (ACTIVE POPOVER) AND CLICK OUTSIDE A POPOVER, SET ACTIVEPOPOVER NULL
+// OR... MAKE IT OPEN ON HOVER
+
 const Navbar = () => {
 
     // TIP: In "somethingItems" arrays, the "icon" key is based on google's icons CDN icon's name

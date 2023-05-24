@@ -8,7 +8,7 @@ const Home = () => {
         <>
         <Header/>
 
-        {/* SIMPLIFIED GESTATION */}
+        {/* SIMPLIFIED MANAGEMENT */}
         <section className="after-header-section w-100">
             <div className="home-gestao-simplificada container d-flex justify-content-between align-items-center justify-content-lg-center">
                 <div className="home-video-columns col-md-6">
@@ -41,7 +41,7 @@ const Home = () => {
                 </div>
 
                 <div className="home-video-columns col-md-6">
-                    <a href="#" className="home-play-video d-flex justify-content-center align-items-center text-decoration-none">
+                    <a href="#" className="media-style home-play-video d-flex justify-content-center align-items-center text-decoration-none">
                         <span className="material-symbols-rounded">play_circle</span>
                     </a>
                 </div>
@@ -49,7 +49,7 @@ const Home = () => {
         </section>
 
         {/* OUR PRODUCTS */}
-        <section className="bg-white w-100 py-5">
+        <section className="bg-white w-100 py-3">
             <Container className="home-service-container row mx-auto py-5">
                 <div className="col-4">
                     <span>Nossos Produtos</span>
@@ -114,18 +114,75 @@ const Home = () => {
         </section>
 
         {/* BENEFITS */}
-        <section className="w-100 py-5">
-            <Container className="mx-auto py-5">
-                <div className="row">
-                    <div className="col-6">
-
+        <section className="w-100 py-3">
+            <Container className="py-5">
+                <div className="row home-benefits-row">
+                    <div className="home-video-columns col-6">
+                        <a href="#" className="media-style home-benefits-image d-flex justify-content-center align-items-center text-decoration-none"></a>
                     </div>
 
-                    <div className="home-video-columns col-6">
-                    <a href="#" className="home-play-video d-flex justify-content-center align-items-center text-decoration-none">
-                        <span className="material-symbols-rounded">play_circle</span>
-                    </a>
-                </div>
+                    <div className="home-benefits-content col-6">
+                        <span>Quem somos</span>
+                        <h1>Nossos Benefícios</h1>
+
+                        <p className="text-muted pb-4 pe-5 my-4">
+                            Somos uma equipe dedicada a transformar a gestão educacional por meio de soluções inovadoras e eficientes.
+                            Nossos produtos proporcionam resultados tangíveis para instituições educacionais, incluindo aumento de produtividade, redução de erros, melhor comunicação e otimização do tempo.
+                        </p>
+
+                        {/* PROGRESS BARS */}
+                        <div className="mb-4">
+                            <div className="d-flex justify-content-between">
+                                <span className="text-muted">Aumento de Produtividade</span>
+                                <span className="text-muted">40%</span>
+                            </div>
+
+                            <progress
+                                className="w-100"
+                                value={40}
+                                max={100}
+                            />
+                        </div>
+
+                        <div className="mb-4">
+                            <div className="d-flex justify-content-between">
+                                <span className="text-muted">Redução de Retrabalhos</span>
+                                <span className="text-muted">70%</span>
+                            </div>
+
+                            <progress
+                                className="w-100"
+                                value={70}
+                                max={100}
+                            />
+                        </div>
+
+                        <div className="mb-4">
+                            <div className="d-flex justify-content-between">
+                                <span className="text-muted">Melhoria na Comunicação</span>
+                                <span className="text-muted">50%</span>
+                            </div>
+
+                            <progress
+                                className="w-100"
+                                value={50}
+                                max={100}
+                            />
+                        </div>
+
+                        <div>
+                            <div className="d-flex justify-content-between">
+                                <span className="text-muted">Otimização do Tempo</span>
+                                <span className="text-muted">30%</span>
+                            </div>
+
+                            <progress
+                                className="w-100"
+                                value={30}
+                                max={100}
+                            />
+                        </div>
+                    </div>
                 </div>
             </Container>
         </section>
