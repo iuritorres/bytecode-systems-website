@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
 import Popover from 'react-bootstrap/Popover'
 
@@ -24,14 +24,14 @@ const Navbar = () => {
 
     // PRODUCTS POPOVER
     const productItems = [
-        {name: 'Frequência', icon: 'calendar_month'},
+        {name: 'Frequência',          icon: 'calendar_month'},
         {name: 'Lançamento de Notas', icon: 'checklist'},
-        {name: 'Moods (Feedbacks)', icon: 'thumbs_up_down'},
-        {name: 'Suporte ao Aluno', icon: 'forum'},
-        {name: 'Comunicados', icon: 'mail'},
-        {name: 'Biblioteca Online', icon: 'menu_book'},
-        {name: 'Diagnósticos', icon: 'analytics'},
-        {name: 'Blog Educacional', icon: 'newspaper'}
+        {name: 'Moods (Feedbacks)',   icon: 'thumbs_up_down'},
+        {name: 'Suporte ao Aluno',    icon: 'forum'},
+        {name: 'Comunicados',         icon: 'mail'},
+        {name: 'Biblioteca Online',   icon: 'menu_book'},
+        {name: 'Diagnósticos',        icon: 'analytics'},
+        {name: 'Blog Educacional',    icon: 'newspaper'}
     ]
 
     const productsPopover = (
@@ -42,7 +42,7 @@ const Navbar = () => {
 
                 {productItems.map(item => (
                     <a
-                        key={`div-${item.name}-${item.icon}`}
+                        key={`a-${item.name}-${item.icon}`}
                         className="navbar-popover-link text-decoration-none d-flex align-items-center gap-3 fs-4 mb-4 text-muted"
                         target='_blank'
                         href="#"
@@ -57,7 +57,7 @@ const Navbar = () => {
 
     // CUSTOMER POPOVER
     const customersItems = [
-        {name: 'Frequência', icon: 'calendar_month'},
+        {name: 'Frequência',          icon: 'calendar_month'},
         {name: 'Lançamento de Notas', icon: 'checklist'}
     ]
 
@@ -69,7 +69,7 @@ const Navbar = () => {
 
                 {customersItems.map(item => (
                     <a
-                        key={`div-${item.name}-${item.icon}`}
+                        key={`a-${item.name}-${item.icon}`}
                         className="navbar-popover-link text-decoration-none d-flex align-items-center gap-3 fs-4 mb-4 text-muted"
                         target='_blank'
                         href="#"
@@ -84,7 +84,7 @@ const Navbar = () => {
 
     // CONTENTS POPOVER
     const contentsItems = [
-        {name: 'Frequência', icon: 'calendar_month'},
+        {name: 'Frequência',          icon: 'calendar_month'},
         {name: 'Lançamento de Notas', icon: 'checklist'}
     ]
 
@@ -96,7 +96,7 @@ const Navbar = () => {
 
                 {contentsItems.map(item => (
                     <a
-                        key={`div-${item.name}-${item.icon}`}
+                        key={`a-${item.name}-${item.icon}`}
                         className="navbar-popover-link text-decoration-none d-flex align-items-center gap-3 fs-4 mb-4 text-muted"
                         target='_blank'
                         href="#"
@@ -111,7 +111,7 @@ const Navbar = () => {
 
     // ABOUT US POPOVER
     const aboutUsItems = [
-        {name: 'Frequência', icon: 'calendar_month'},
+        {name: 'Frequência',          icon: 'calendar_month'},
         {name: 'Lançamento de Notas', icon: 'checklist'}
     ]
 
@@ -123,7 +123,7 @@ const Navbar = () => {
 
                 {aboutUsItems.map(item => (
                     <a
-                        key={`div-${item.name}-${item.icon}`}
+                        key={`a-${item.name}-${item.icon}`}
                         className="navbar-popover-link text-decoration-none d-flex align-items-center gap-3 fs-4 mb-4 text-muted"
                         target='_blank'
                         href="#"
@@ -144,7 +144,7 @@ const Navbar = () => {
                     <h2 className="fs-1">byte<span className="purple-span">code</span></h2>
                 </a>
 
-                <ul className="w-50 list-unstyled m-0 d-flex gap-5 align-items-center">
+                <ul className="w-50 list-unstyled m-0 d-flex gap-5 align-items-center">                    
                     <OverlayTrigger
                         trigger="click"
                         placement="bottom"
