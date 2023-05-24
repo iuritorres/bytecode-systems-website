@@ -6,6 +6,8 @@ import "./Navbar.css"
 
 const Navbar = () => {
 
+    // TIP: In "somethingItems" arrays, the "icon" key is based on google's icons CDN icon's name
+
     // HANDLE OPEN & CLOSE POPOVERS
     const [activePopover, setActivePopover] = useState(null)
 
