@@ -1,7 +1,8 @@
 import { Button, Container, Form } from "react-bootstrap"
 import { Link } from "react-router-dom"
 
-import './Footer.css'
+import "./Footer.css"
+import logo from "../../images/logo-svg.svg"
 
 const Footer = () => {
 
@@ -15,19 +16,19 @@ const Footer = () => {
 
     // FOOTER LINKS
     const otherPages = [
-        {title: 'Home',     path: '/'},
-        {title: 'Sobre',    path: '/'},
-        {title: 'Serviços', path: '/'},
-        {title: 'Produtos', path: '/'},
-        {title: 'Contato',  path: '/'},
+        {title: "Home",     path: "/"},
+        {title: "Sobre",    path: "/"},
+        {title: "Serviços", path: "/"},
+        {title: "Produtos", path: "/"},
+        {title: "Contato",  path: "/"},
     ]
 
     const quickLinks = [
-        {title: 'Isenção de Responsabilidade', path: '/'},
-        {title: 'Política de Privacidade',     path: '/'},
-        {title: 'Termos de Uso',               path: '/'},
-        {title: 'Créditos',                    path: '/'},
-        {title: 'FAQ',                         path: '/'},
+        {title: "Isenção de Responsabilidade", path: "/"},
+        {title: "Política de Privacidade",     path: "/"},
+        {title: "Termos de Uso",               path: "/"},
+        {title: "Créditos",                    path: "/"},
+        {title: "FAQ",                         path: "/"},
     ]
 
     return (
@@ -74,7 +75,7 @@ const Footer = () => {
             <Container className="footer-content-container py-5 d-flex justify-content-between">
                 <div className="w-25">
                     <Link to="/" className="footer-content-logo d-flex align-items-center gap-2 text-white">
-                        <img src="/logo-svg.svg" className="logo-footer" alt="bytecode - coding the future logo" />
+                        <img src={logo} className="logo-footer" alt="bytecode - coding the future logo" />
                         <h2 className="fs-1">byte<span className="purple-span">code</span></h2>
                     </Link>
 
