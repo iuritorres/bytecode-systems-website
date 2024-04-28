@@ -7,7 +7,7 @@ const App = () => {
     // ROUTES
     return (
         <BrowserRouter>
-            {/* VLIBRAS */}
+            {/* V LIBRAS */}
             <div vw="true" className="enabled">
                 <div vw-access-button="true" className="active"></div>
                     <div vw-plugin-wrapper="true">

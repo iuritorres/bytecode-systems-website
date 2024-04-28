@@ -1,147 +1,147 @@
 * {
-    transition: all 200ms ease;
-    text-decoration: none !important;
+  transition: all 200ms ease;
+  text-decoration: none !important;
 }
 
 html {
-    /* a cada 1rem = 10px */
-    font-size: 62.5%;    
+  /* a cada 1rem = 10px */
+  font-size: 62.5%;
 }
 
 body {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 1.6rem;
-    min-height: 100vh;    
-    
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.6rem;
+  min-height: 100vh;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* VLibras */
 .access-button {
-    width: 30% !important;
-    border-radius: 50%;
+  width: 70px !important;
+  height: 70px !important;
 }
 
 /* scroll bar */
 ::-webkit-scrollbar {
-    width: 6px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-    background: aliceblue;    
+  background: aliceblue;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #610BD9;
-    border-radius: 1rem;
+  background: #610bd9;
+  border-radius: 1rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #5617ae;
+  background: #5617ae;
 }
 
 /* progress bars */
 progress {
-    border-radius: 0;
-    height: 1.4rem;
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 0;
+  height: 1.4rem;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
 }
 
 progress::-webkit-progress-bar {
-    background-color: gainsboro;
-    border-radius: 0;
+  background-color: gainsboro;
+  border-radius: 0;
 }
 
 progress::-webkit-progress-value {
-    background-color: #610BD9;
-    border-radius: 0;
+  background-color: #610bd9;
+  border-radius: 0;
 }
 
 progress::-moz-progress-bar {
-    border-radius: 0;
-    height: 1.4rem;
-    background-color: gainsboro;
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 0;
+  height: 1.4rem;
+  background-color: gainsboro;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* elements */
 section span {
-    color: #5617ae;
+  color: #5617ae;
 }
 
 a:hover {
-    color: #5617ae;
-    opacity: 10px;
+  color: #5617ae;
+  opacity: 10px;
 }
 
 a.text-muted:hover {
-    color: #D629D9 !important;
+  color: #d629d9 !important;
 }
 
 .bg-white {
-    background-color: aliceblue !important;
+  background-color: aliceblue !important;
 }
 
 .text-white {
-    color: aliceblue !important;
+  color: aliceblue !important;
 }
 
 .logo {
-    height: 50px;
+  height: 50px;
 }
 
 .logo-footer {
-    height: 40px;
-    margin-left: -4px;
+  height: 40px;
+  margin-left: -4px;
 }
 
 .purple-span {
-    color: #D629D9;
+  color: #d629d9;
 }
 
 /* primary button */
 .primary-button {
-    background-color: #610BD9;
-    color: aliceblue !important;
-    padding: 16px 24px;
-    border-radius: 4px;
-    width: fit-content;
-    text-align: center;
+  background-color: #610bd9;
+  color: aliceblue !important;
+  padding: 16px 24px;
+  border-radius: 4px;
+  width: fit-content;
+  text-align: center;
 }
 
 .primary-button:hover {
-    background-color: #5617ae;
+  background-color: #5617ae;
 }
 
 /* primary card */
 .primary-card {
-    background-color: rgb(227, 234, 240);
-    padding: 30px;
-    border-radius: 4px;
-    border-bottom: #5617ae 8px solid;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: rgb(227, 234, 240);
+  padding: 30px;
+  border-radius: 4px;
+  border-bottom: #5617ae 8px solid;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .primary-card:hover {
-    background-color: rgb(217, 219, 220);
+  background-color: rgb(217, 219, 220);
 }
 
 .primary-card span {
-    color: #5617ae;
-    font-size: 4.4rem;
-    margin-bottom: 24px;
+  color: #5617ae;
+  font-size: 4.4rem;
+  margin-bottom: 24px;
 }
 
 .primary-card h3 {
-    font-weight: bold;
-    margin-bottom: 8px;
+  font-weight: bold;
+  margin-bottom: 8px;
 }
 
 /* media styles */
 .media-style {
-    border-radius: 24px 0 24px 0;
-    box-shadow: 15px 15px 0 #5617ae;
+  border-radius: 24px 0 24px 0;
+  box-shadow: 15px 15px 0 #5617ae;
 }
