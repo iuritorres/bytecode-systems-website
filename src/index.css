@@ -118,7 +118,7 @@ a.text-muted:hover {
 
 /* primary card */
 .primary-card {
-  background-color: rgb(227, 234, 240);
+  background-color: #e3eaf0;
   padding: 30px;
   border-radius: 4px;
   border-bottom: #5617ae 8px solid;
@@ -126,7 +126,7 @@ a.text-muted:hover {
 }
 
 .primary-card:hover {
-  background-color: rgb(217, 219, 220);
+  background-color: #d9dbdc;
 }
 
 .primary-card span {
