@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-size: 1.6rem;
   min-height: 100vh;
 
@@ -17,12 +17,6 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-/* VLibras */
-.access-button {
-  width: 70px !important;
-  height: 70px !important;
 }
 
 /* scroll bar */
